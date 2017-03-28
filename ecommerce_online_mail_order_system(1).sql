@@ -176,20 +176,36 @@ CREATE TABLE IF NOT EXISTS `parts` (
   `pname` varchar(30) DEFAULT NULL,
   `qoh` int(11) DEFAULT NULL,
   `price` decimal(6,2) DEFAULT NULL,
-  `olevel` int(11) DEFAULT NULL
+  `olevel` int(11) DEFAULT NULL,
+  'description' varchar(1000) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `parts`
 --
 
-INSERT INTO `parts` (`pno`, `pname`, `qoh`, `price`, `olevel`) VALUES
-(7, 'Rolex Watch', 5, '453.00', 2),
-(8, 'Victoria Diamond Earrings', 2, '100.00', 2),
-(9, 'Cuff Links', 2, '78.00', 2),
-(10, 'Anniversay V Rings', 1, '400.00', 1),
-(11, 'Love Necklace', 2, '120.00', 2),
-(12, 'Pendants', 3, '110.00', 3);
+INSERT INTO `parts` (`pno`, `pname`, `qoh`, `price`, `olevel`, 'description') VALUES
+(7, 'Strap-in Cuff Bracelet', 5, '143.00', 2, 'Black leather wrap with a golden encrypted hook.'),
+(8, 'Gold Plated Art Watches', 2, '100.00', 2, 'Michael Kors Gold Plated Art Watches. Edition 2.0.
+One size'),
+(9, 'Marvels Heros Cufflinks', 2, '78.00', 2, 'Marvels Heros Cufflinks by Tiffany & Co.
+Perfect size'),
+(10, 'Parrot Shaped Rings', 1, '400.00', 1, 'Diamond crystals embedded in parrot 
+shape ring. 
+
+One size'),
+(11, 'Choker and Ring Set', 2, '120.00', Copper and Velvet fabric Choker & Ring Set.
+
+Small and Medium size),
+(12, 'Engraved Pendants', 3, '143.00', 3, 'Silver Color Brushed Engraved Pendants.
+One size'),
+(13, 'Silver Anklet', 1, '13.00', 1, 'Silver Anklet with Rose design.
+
+One size'),
+(15, 'Arc Earrings', 2, '43.00', 2, 	
+'Eddie Borgo Arc Earrings.
+
+Fits all');
 
 -- --------------------------------------------------------
 
